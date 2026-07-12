@@ -1,0 +1,78 @@
+/* TransitOps Premium Design System (theme.css) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Color System */
+  --bg-main: #0F172A;        /* Deep Navy base */
+  --bg-surface: #1E293B;     /* Slightly lighter dark navy for cards/panels */
+  --bg-sidebar: #0B0F19;     /* Ultra dark navy for left sidebar */
+  --border-color: #334155;   /* Slate boundary border */
+  
+  --text-primary: #F8FAFC;   /* Crisp white-slate */
+  --text-secondary: #94A3B8; /* Muted gray-slate */
+  --text-muted: #64748B;     /* Subdued slate */
+  
+  --accent-amber: #F59E0B;   /* Amber color - ONLY for primary buttons and micro-accents */
+  --accent-amber-hover: #D97706;
+  
+  /* Status Pill Colors */
+  --status-available-bg: rgba(16, 185, 129, 0.1);
+  --status-available-text: #10B981;
+  --status-trip-bg: rgba(59, 130, 246, 0.1);
+  --status-trip-text: #3B82F6;
+  --status-shop-bg: rgba(245, 158, 11, 0.1);
+  --status-shop-text: #F59E0B;
+  --status-retired-bg: rgba(239, 68, 68, 0.1);
+  --status-retired-text: #EF4444;
+  
+  --status-draft-bg: rgba(148, 163, 184, 0.1);
+  --status-draft-text: #94A3B8;
+  --status-dispatched-bg: rgba(168, 85, 247, 0.1);
+  --status-dispatched-text: #A855F7;
+  --status-completed-bg: rgba(16, 185, 129, 0.1);
+  --status-completed-text: #10B981;
+  --status-cancelled-bg: rgba(239, 68, 68, 0.1);
+  --status-cancelled-text: #EF4444;
+  
+  --status-offduty-bg: rgba(100, 116, 139, 0.15);
+  --status-offduty-text: #94A3B8;
+  --status-suspended-bg: rgba(220, 38, 38, 0.15);
+  --status-suspended-text: #EF4444;
+
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  
+  /* Grid & Spacing (8px grid) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;         /* Primary 12px rounded corner rule */
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  
+  /* Transition durations */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+}
+
+/* Base resets mapped to variables */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
